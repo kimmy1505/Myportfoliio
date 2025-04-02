@@ -1,0 +1,365 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: "Lexend", serif;
+    margin: 0;
+}
+
+body <contact-me>{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Lexend", serif;
+}
+
+.contact{
+    min-height: 100vh;
+    background-color: #9e4653;
+    padding: 50px;
+    text-align: center;
+}
+
+.container{
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+}
+
+.container h2{
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: pink;
+}
+
+.contact-wrapper{
+    display: flex;
+    flex-direction: column;
+    grid-gap: 0;
+}
+
+.contact-form{
+    width: 100%;
+}
+
+.contact-form h3{
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: palevioletred;
+}
+
+.contact-info{
+    flex-wrap: 1;
+}
+
+.form-group{
+    margin-bottom: 20px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.form-group textarea {
+    height: 100px;
+}
+
+button send-mes{
+    background-color: palevioletred;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #d13a50;
+}
+
+#submitted-data {
+    display: none;
+}
+
+#submitted-data h3 {
+    color: palevioletred;
+}
+
+#submitted-data p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+#backButton {
+    background-color: #555;
+    margin-top: 15px;
+}
+
+#backButton:hover {
+    background-color: #333;
+}
+
+@media screen and(max-width: 768px){
+    .container{
+        padding: 20px;
+    }
+    .contact-wrapper{
+        grid-template-columns: 1fr;
+    }
+}
+
+.hero{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    background-color: white;
+    flex-basis: 400px;
+}
+
+.hero-img{
+    flex-wrap: 1;
+}
+
+.hero-heading{
+    flex-wrap: 1;
+}
+
+.name{
+    font-family: "Cedarville Cursive", serif;
+    font-size: small;
+}
+
+#main-div{
+    padding: 100px;
+}
+
+.burger-menu-btn{
+    display: none;
+}
+
+
+.header{
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 100px;
+    z-index: 9998;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.418);
+}
+
+.nav-menu{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    list-style: none;
+}
+
+.nav-menu a{
+    text-decoration: none;
+    color: black;
+}
+
+.nav-menu a:hover{
+    color: brown;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+
+.site-identity{
+    display: flex;
+    gap: 30px;
+}
+
+.site-identity{
+    width: 70px !important;
+    height: 70px !important;
+}
+
+.hero-heading{
+    font-size: 72px;
+}
+
+.hero-heading button{
+    background-color: brown;
+    padding: 10px 30px;
+    color: white;
+    border: none;
+}
+
+.menu-container-mobile{
+    display: none;
+}
+
+.menu-btn{
+    background-color: brown;
+    color: white !important;
+    padding: 10px 15px;
+}
+
+.menu-btn:hover{
+    background-color: brown;
+    border-radius: 20px;
+    transition: all;
+}
+
+.menu-btn a{
+    background-color: brown;
+    color: white !important;
+    padding: 10px 15px;
+}
+
+.menu-btn a:hover{
+    font-weight: 400;
+}
+.small-img{
+    position: absolute;
+    top: 150px;
+    left: -40px;
+    width: 80px;
+    height: 80px;
+}
+
+.sub-head{
+    font-size: 18px;
+    color: black;
+    font-weight: 600;
+    opacity: 0.5;
+}
+
+.hero-button button{
+    padding: 20px 40px;
+
+}
+
+.hero-button button:hover{
+    background: brown;   
+}
+
+.small-text{
+    font-size: 15px;
+    color: black;
+    opacity: 0.3;
+    margin-top: 40px;
+}
+
+.bilog-img{
+    width: 150px;
+    height: 150px;   
+}
+
+.section-2{
+    height: 400px;
+    width: 100%;
+}
+
+.section-2-div1{
+    display: flex;
+}
+
+.img-cont{
+    background: #3F0A12;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.smol-img{
+    display: flex;
+    width: 50px;
+    height: 50px;
+    justify-content: flex-start;
+    margin-left: 750px;
+}
+
+.smol-img{
+    display: flex;
+}
+
+.hero3-heading{
+    font-size: 20px;
+}
+
+#section-3{
+    padding: 100px;
+}
+
+.hero3{
+    display: flex;
+    gap: 20px;
+    background-color: white;
+}
+
+.sub3-head{
+    font-size: 15px;
+    color: black;
+    font-weight: 600;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+}
+.contact-container {
+    width: 50%;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+/* Form styling */
+.contact-form label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #45a049;
+}

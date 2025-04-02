@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyPortfolio</title>
+    <link rel="stylesheet" href="assets/ccs/style.css">
+    <link rel="stylesheet" href="assets/ccs/mobile.css">
+    <link rel="stylesheet" href="assets/ccs/tablet.css">
+    <link rel="stylesheet" href="contact.html">
+    <link rel="stylesheet" href="contact.js">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="header">
+    <a href="#main-div" style="text-decoration: none; color: black;">
+    <div class="site-identity">
+        <img src="assets/images/ptc logo.png" alt="Site logo">
+        <h4 class="name">Ethan David</h4>
+          </div>
+    </a>
+  <div class="menu-container">
+        <ul class="nav-menu">
+            <li><a href="#main-div">Home</a></li>
+            <li><a href="#About">About</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Work</a></li>
+            <li class="menu-btn"><a href="#">Hire Me</a></li>
+        </ul>
+    </div>
+
+    <div class="login-container">
+        <h2>Login</h2>
+        <form id="loginForm">
+            <label for="username">Username:</label>
+            <input type="text" id="username" placeholder="Enter username">
+            
+            <label for="password">Password:</label>
+            <input type="password" id="password" placeholder="Enter password">
+            
+            <button type="submit">Login</button>
+            <p id="error-message" style="color: red;"></p>
+        </form>
+    </div>
+
+    <div class="burger-menu-btn">
+        <img src="assets/images/borgir.png" alt="" onclick="toggleMenu()">
+    </div>
+</div>
+  
+    <div class="menu-container-mobile">
+    <img class="close-btn" src="assets/images/close.png" alt="" onclick="toggleMenu()">
+      <ul class="nav-menu-mobile">
+         <li><a href="#main-div">Home</a></li>
+         <li><a href="#About">About</a></li>
+         <li><a href="#">Projects</a></li>
+         <li><a href="#">Work</a></li>
+         <li class="menu-btn"><a href="#">Hire Me</a></li>
+       </ul>
+    </div>
+
+    <div id="main-div" class="hero">
+        <div class="hero-img" style="position: relative;">
+            <img src="assets/images/hero1.jpg" alt="hero image">
+            <img class="small-img" src="assets/images/ptc logo.png" alt="site-logo">
+        </div>
+        <div class="hero-heading">
+            <h1>Ethan <br> David</h1>
+            <p class="sub-head">I am a singer, dancer, and actor</p>
+        <div class="hero-button">
+              <button onclick="showPrompt()" style="margin-right: 15px;">Hire Me</button>
+             <button>Contact Me</button>
+        </div>
+            <p class="small-text">Applying for Choreographer</p>
+        </div>
+    </div>
+
+    <div class="section-2" id="About">
+        <div class="section-2-div1">
+            <div style="width: 50%;"></div>
+            <div class="img-cont">
+                <img class="bilog-img" src="assets/images/bilogg.jpg" alt="">
+            </div>
+        </div>
+        <div class="smol-img">
+            <img src="assets/images/img2.jpg" alt="">
+            <p style="margin:  15px 15px;"> Facebook</p>
+            <img src="assets/images/img3.jpg" alt="">
+            <p style="margin: 15px 15px;">Apple</p>
+            <img src="assets/images/img4.jpg" alt="">
+            <p style="margin: 15px 15px;">Instagram</p>
+        </div>
+    </div>
+    
+    <div id="section-3" class="hero3">
+        <div style="position: relative;">
+            <img src="assets/images/hero3.jpg" alt="hero3 image">
+        </div>
+        <div class="hero3-heading">
+            <h1>About Me</h1>
+            <p class="sub3-head">As a passionate singer, actor, and dancer, I specialize in bringing artistic visions to life through dynamic choreography.  With extensive experience in various performance styles, I collaborate closely with directors and artists to create compelling and engaging routines. My ability to blend creativity with technique enables me to design memorable performances that elevate the overall production. 
+                I'm committed to pushing boundaries and inspiring fellow performers, while ensuring every movement tells a story.</p>
+        </div>
+    </div>
+    </div>
+
+     <script>
+        function toggleMenu(){
+            document.querySelector(".menu-container-mobile").classList.toggle("active");
+        }
+     </script>
+
+<script>
+    function showPrompt() {
+        alert("Welcome to JavaScript!");
+        
+        let name = prompt("What is your name?");
+        if (!name) {
+            name = "Guest";
+        }
+        
+        let likesJS = confirm("Do you like JavaScript?");
+        
+        let message = likesJS 
+            ? `Hello, ${name}! Glad you like JavaScript!` 
+            : `Hello, ${name}! Hope you learn to enjoy it!`;
+        
+        let output = document.createElement("p");
+        output.id = "output";
+        output.style.fontSize = "30px";
+        output.style.fontFamily = "Cedarville Cursive, cursive";
+        output.textContent = message;
+        
+        document.body.appendChild(output);
+    }
+</script>
+
+<head>
+<title>Responsive Contact Us Page</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body class="contact-me">
+
+<section class="contact">
+    <div class="container">
+        <h2>Contact Us</h2>
+        <div class="contact-wrapper" id="form-container">
+            <div class="contact-form">
+                <h3>Send us a message</h3>
+                <form>
+                    <div class="form-group">
+                        <input type="text" id="firstName" placeholder="First Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="lastName" placeholder="Last Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit">Send message</button>
+                </form>
+
+            </div>
+        </div>
+
+        <div id="submitted-data" style="display: none; text-align: center; margin-top: 20px; padding: 20px; border: 1px solid #ddd; border-radius: 5px; background: white; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
+            <h3>Submitted Information</h3>
+            <p><strong>First Name:</strong> <span id="displayFirstName"></span></p>
+            <p><strong>Last Name:</strong> <span id="displayLastName"></span></p>
+            <p><strong>Email:</strong> <span id="displayEmail"></span></p>
+            <p><strong>Message:</strong> <span id="displayMessage"></span></p>
+            <h4>Summary</h4>
+            <p id="summary"></p>
+            <button id="backButton">Back</button>
+        </div>
+
+        <div class="contact-info">
+            <h3>Contact Information</h3>
+            <p>📞 +63 938 0520 685</p>
+            <p>📧 kimjaaneambid@gmail.com</p>
+        </div>
+    </div>
+</section>
+
+<script src="js/script.js"></script>
+
+</body>
+</body>
+</html>
